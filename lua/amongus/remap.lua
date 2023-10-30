@@ -8,8 +8,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 --appends line below to current line with a space
 vim.keymap.set("n", "J", "mzJ`z")
 --moving with <C-d> and <C-u> cursor will stay in place
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+--vim.keymap.set("n", "<C-d>", "<C-d>zz")
+--vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 --search terms will stay in the middle of screen
 vim.keymap.set("n", "n", "nzzzv")

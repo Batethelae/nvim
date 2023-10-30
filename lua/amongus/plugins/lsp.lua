@@ -92,7 +92,15 @@ return{
             root_dir = function () return vim.fn.getcwd()
             end
         }
-
+        require'lspconfig'.rust_analyzer.setup{
+            settings = {
+                ['rust-analyzer'] = {
+                    diagnostics = {
+                        enable = true;
+                    }
+                }
+            }
+        }
 
     end
 }
