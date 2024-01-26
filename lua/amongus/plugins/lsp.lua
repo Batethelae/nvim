@@ -22,13 +22,11 @@ return{
         lsp.ensure_installed({
             'rust_analyzer',
             'clangd',
-            'zls',
-
-            'html',
-            'cssls',
-            'eslint',
-            'tsserver',
-            
+            --'zls',
+            --'html',
+            --'cssls',
+            --'eslint',
+            --'tsserver',
             'lua_ls',
 
         })

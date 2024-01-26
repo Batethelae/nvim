@@ -1,3 +1,4 @@
-return{
-    'lvimuser/lsp-inlayhints.nvim',
-}
+return{}
+-- return{
+--     'lvimuser/lsp-inlayhints.nvim',
+-- }

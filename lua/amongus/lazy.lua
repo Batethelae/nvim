@@ -1,10 +1,10 @@
 require("lazy").setup({
     {import = "amongus.plugins"},
-    },
+},
 
     {
         install = {
-            colorscheme = {"vscode"},
+            colorscheme = {"gruvbox"},
         },
         checker = {
             enabled = true,
@@ -14,4 +14,4 @@ require("lazy").setup({
             notify = false,
         },
 
-})
+    })

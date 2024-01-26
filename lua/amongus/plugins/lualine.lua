@@ -7,7 +7,8 @@ return{
                 icons_enabled = true,
                 --theme = 'auto',
                 --theme = 'solarized_dark',
-                theme = 'onedark',
+                -- theme = 'onedark',
+                theme = 'gruvbox',
                 component_separators = { left = '|', right = '|'},
                 section_separators = { left = '', right = ''},
                 disabled_filetypes = {
@@ -29,7 +30,7 @@ return{
                 lualine_b = {{'filename', path = 1},  'filetype', 'encoding', 'filesize'},
                 lualine_c = { --[["os.date('%a')", 'data', "vim.api.nvim_win_get_number(0)",]] "lsp_progress" },
                 lualine_x = {'selectioncount', {'branch', icon = ""}},
-                lualine_y = { "datetime"},
+                -- lualine_y = { "datetime"},
                 lualine_z = {'location'}
             },
             inactive_sections = {

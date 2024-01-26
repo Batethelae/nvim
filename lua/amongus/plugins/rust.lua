@@ -1,4 +1,5 @@
-return{
-'neovim/nvim-lspconfig',
-'simrat39/rust-tools.nvim',
-}
+return{}
+-- return{
+-- 'neovim/nvim-lspconfig',
+-- 'simrat39/rust-tools.nvim',
+-- }
