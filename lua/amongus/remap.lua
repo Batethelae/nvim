@@ -59,3 +59,8 @@ vim.keymap.set("v", "<leader>p", "\"+p")
 -- <leader>y will copy into clipboard (+)
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
+
+-- no highligh on double (or triple) escape
+vim.keymap.set("n", "<esc><esc>",function ()
+   vim.cmd("noh")
+end)
