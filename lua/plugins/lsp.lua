@@ -85,20 +85,36 @@ return{
 
 
         --this enables javascript lsp to actually work. without setting the cwd it doesn't work
-        require('lspconfig').tsserver.setup{
-            firetypes = {"javascript"},
-            root_dir = function () return vim.fn.getcwd()
-            end
-        }
-        require'lspconfig'.rust_analyzer.setup{
-            settings = {
-                ['rust-analyzer'] = {
-                    diagnostics = {
-                        enable = true;
-                    }
-                }
-            }
-        }
+        -- require('lspconfig').tsserver.setup{
+        --     firetypes = {"javascript"},
+        --     root_dir = function () return vim.fn.getcwd()
+        --     end
+        -- }
+        -- require'lspconfig'.rust_analyzer.setup{
+        --     settings = {
+        --         ['rust-analyzer'] = {
+        --             diagnostics = {
+        --                 enable = true;
+        --             }
+        --         }
+        --     }
+        -- }
+
+        --this enables javascript lsp to actually work. without setting the cwd it doesn't work
+        -- require('ts-ls').tsserver.setup{
+        --     firetypes = {"javascript"},
+        --     root_dir = function () return vim.fn.getcwd()
+        --     end
+        -- }
+        -- require'ts-ls'.rust_analyzer.setup{
+        --     settings = {
+        --         ['rust-analyzer'] = {
+        --             diagnostics = {
+        --                 enable = true;
+        --             }
+        --         }
+        --     }
+        -- }
 
     end
 }

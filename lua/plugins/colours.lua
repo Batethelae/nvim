@@ -16,8 +16,9 @@ return{
         --vscode colour scheme
         'Mofiqul/vscode.nvim',
         priority = 100,
-        lazy = true,
+        lazy = false,
         config= function()
+            -- vim.cmd([[colorscheme vscode]])
             --vim.cmd([[colorscheme vscode)
             require('vscode').setup({
                 transparent = false,
@@ -29,7 +30,7 @@ return{
                     vscLineNumber = '#FFFFFF',
                 },
             })
-            --require('vscode').load()
+            -- require('vscode').load('dark')
         end,
     },
     {

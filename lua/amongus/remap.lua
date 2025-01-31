@@ -1,6 +1,6 @@
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.keymap.set("n","U","<nop>");
+vim.keymap.set("n", "U", "<nop>");
 
 --moving around highlighted lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -32,7 +32,10 @@ if jit.os == "Windows" then
 end
 
 -- formats
-vim.keymap.set("n", "<leader>pf", function()
+-- vim.keymap.set("n", "<leader>pf", function()
+--     vim.lsp.buf.format()
+-- end)
+vim.keymap.set("n", "=", function()
     vim.lsp.buf.format()
 end)
 
@@ -63,6 +66,6 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
 -- no highligh on double (or triple) escape
-vim.keymap.set("n", "<esc><esc>",function ()
-   vim.cmd("noh")
+vim.keymap.set("n", "<esc><esc>", function()
+    vim.cmd("noh")
 end)

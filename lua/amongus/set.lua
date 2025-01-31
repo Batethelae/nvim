@@ -20,7 +20,7 @@ vim.opt.incsearch = true
 vim.opt.hlsearch = true
 
 --something about gui colours?
-vim.opt.termguicolors = true
+--vim.opt.termguicolors = true
 
 --never have less than 8 chars from bottom
 vim.opt.scrolloff = 8
