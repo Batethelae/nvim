@@ -69,3 +69,10 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<esc><esc>", function()
     vim.cmd("noh")
 end)
+
+
+
+
+-- temp
+-- in normal mode disable s (same as 'cl') 
+vim.keymap.set('n','s','',nil)

@@ -1,5 +1,6 @@
 return{
     'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function()
 
         require('lualine').setup {
@@ -8,7 +9,7 @@ return{
                 --theme = 'auto',
                 --theme = 'solarized_dark',
                 -- theme = 'onedark',
-                theme = 'gruvbox',
+                theme = 'jellybeans',
                 component_separators = { left = '|', right = '|'},
                 section_separators = { left = '', right = ''},
                 disabled_filetypes = {
@@ -26,11 +27,10 @@ return{
             },
             sections = {
                 lualine_a = {'mode'},
-                -- lualine_b = {'branch', 'diff', 'diagnostics'},
                 lualine_b = {{'filename', path = 1},  'filetype', 'encoding', 'filesize'},
-                lualine_c = { --[["os.date('%a')", 'data', "vim.api.nvim_win_get_number(0)",]] "lsp_progress" },
-                lualine_x = {'selectioncount', {'branch', icon = ""}},
-                -- lualine_y = { "datetime"},
+                lualine_c = {"lsp_progress"},
+                lualine_x = {'', {'branch', icon = ""}},
+                lualine_y = {"fileformat"},
                 lualine_z = {'location'}
             },
             inactive_sections = {

@@ -19,17 +19,16 @@ return{
 
         lsp.preset("recommended")
 
-        lsp.ensure_installed({
-            'rust_analyzer',
-            'clangd',
-            --'zls',
-            --'html',
-            --'cssls',
-            --'eslint',
-            --'tsserver',
-            'lua_ls',
-
-        })
+        -- lsp.ensure_installed({
+        --     'rust_analyzer',
+        --     'clangd',
+        --     --'zls',
+        --     --'html',
+        --     --'cssls',
+        --     --'eslint',
+        --     --'tsserver',
+        --     -- 'lua_ls',
+        -- })
 
         -- Fix Undefined global 'vim'
         lsp.nvim_workspace()
