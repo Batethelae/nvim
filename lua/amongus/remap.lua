@@ -25,7 +25,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 
 -- for windows:
 if jit.os == "Windows" then
-    -- <leader>y will copy into system clipboard (have to set up clipboard somehow????)
+    -- <leader>y will copy into system clipboard
     --vim.keymap.set("n", "<leader>y", "\"+y")
     vim.keymap.set("v", "<leader>y", ":w !clip.exe")
     --vim.keymap.set("n", "<leader>Y", "\"+Y")
@@ -70,9 +70,5 @@ vim.keymap.set("n", "<esc><esc>", function()
     vim.cmd("noh")
 end)
 
-
-
-
--- temp
 -- in normal mode disable s (same as 'cl') 
 vim.keymap.set('n','s','',nil)
