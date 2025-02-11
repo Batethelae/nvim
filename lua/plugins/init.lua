@@ -1,6 +1,25 @@
+return{}
+
 --things without a config or anything (things that are just one line)
-return{
+-- return{
     -- 'ziglang/zig.vim',
-    'arkav/lualine-lsp-progress',
     -- 'simrat39/inlay-hints.nvim',
-}
+-- }
+-- return{
+  -- "folke/which-key.nvim",
+  -- event = "VeryLazy",
+  -- opts = {
+  --   -- your configuration comes here
+  --   -- or leave it empty to use the default settings
+  --   -- refer to the configuration section below
+  -- },
+  -- keys = {
+  --   {
+  --     "<leader>?",
+  --     function()
+  --       require("which-key").show({ global = false })
+  --     end,
+  --     desc = "Buffer Local Keymaps (which-key)",
+  --   },
+  -- },
+-- }

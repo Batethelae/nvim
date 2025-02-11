@@ -8,9 +8,9 @@ return{
         'morhetz/gruvbox',
         priority = 1000,
         lazy = false,
-        config = function()
-            vim.cmd([[colorscheme gruvbox]])
-        end
+        -- config = function()
+        --     vim.cmd([[colorscheme gruvbox]])
+        -- end
     },
     {
         --vscode colour scheme
@@ -42,7 +42,15 @@ return{
     {
         "rose-pine/neovim",
         name = "rose-pine",
-        lazy = false
+        lazy = false,
+    },
+    {
+        'sainnhe/everforest',
+        priority = 1000,
+        lazy = false,
+        config = function()
+            vim.cmd([[colorscheme everforest]])
+        end
     }
 
 
