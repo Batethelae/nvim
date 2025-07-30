@@ -1,8 +1,5 @@
--- local function colours_disable_background()
---     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
---     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
--- end
-
+--colour schemes
+-- default can be set with: 
 return{
     {
         'morhetz/gruvbox',

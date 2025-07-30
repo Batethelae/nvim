@@ -11,5 +11,15 @@ return {
         --     builtin.grep_string({search = vim.fn.input("Grep > ") });
         -- end, {desc = '[s]earch for [w]ord'})
         vim.keymap.set('n', '<leader>sw', builtin.live_grep, {desc = "livegrep"})
+
+        require('telescope').setup{
+            defaults={
+                mappings={
+                    --close on single escape
+                    i = {["<esc>"] = require("telescope.actions").close,}
+                }, 
+            },
+        }
+
     end
 }

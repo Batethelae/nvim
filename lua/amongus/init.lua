@@ -1,6 +1,4 @@
-require("amongus.lazy")
-require("amongus.remap")
-require("amongus.set")
+require("amongus.settings")
 require("amongus.autocommands")
-
-
+require("amongus.lazy")
+require("amongus.lsp")

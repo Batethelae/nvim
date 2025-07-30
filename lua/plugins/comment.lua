@@ -1,9 +1,0 @@
-return{
-    'numToStr/Comment.nvim',
-    opts = {
-        -- add any options here
-    },
-    event = {"BufReadPre", "BufNewFile"},
-    config = true,
-}
-
