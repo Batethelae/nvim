@@ -28,7 +28,9 @@ return{
                 default = { 'lsp', 'path', 'snippets', 'buffer' },
             },
 
-            fuzzy = { implementation = "lua" }
+            fuzzy = { implementation = "lua" },
+
+            signature = { enabled = true }
         },
         opts_extend = { "sources.default" }
     }

@@ -22,7 +22,7 @@ require("lazy").setup({
     },
     --settings for lazy
     install = {colorscheme = {"default"}},
-    checker = {enabled = true},
+    checker = {enabled = false},
 
     change_detection = {
         enabled = false,
