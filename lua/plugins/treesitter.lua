@@ -5,7 +5,7 @@ return{
         local configs = require("nvim-treesitter.configs")
 
         configs.setup({
-            ensure_installed = { "rust","cpp", "c", "lua", "zig", "html", "css", "javascript" },
+            ensure_installed = { "rust","cpp", "c", "lua", "zig", "html", "css", "javascript", "java" },
             sync_install = false,
             auto_install = true,
             highlight = {
