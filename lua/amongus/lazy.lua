@@ -30,5 +30,9 @@ require("lazy").setup({
     rocks = {
         enabled = false
     },
+    dev = {
+        path = "~/projects",
+        fallback = false,
+    }
 
 })

@@ -45,10 +45,21 @@ return{
         'sainnhe/everforest',
         priority = 1000,
         lazy = false,
+        -- config = function()
+        --     vim.cmd([[colorscheme everforest]])
+        -- end
+    },
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        priority = 1000,
+    },
+    {
+        -- url = {"~/projects/colourscheme_nvim"}
+        "colourscheme_nvim",
+        dev = true,
         config = function()
-            vim.cmd([[colorscheme everforest]])
+            vim.cmd([[colorscheme colourscheme_nvim]])
         end
     }
-
-
 }

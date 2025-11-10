@@ -45,3 +45,7 @@ vim.keymap.set('n', '<leader>y', '"+y')
 vim.keymap.set({'v', 'x'}, '<leader>y', '"+y<CR>')
 vim.keymap.set({'n', 'v', 'x'}, '<leader>p', '"+p<CR>')
 
+
+--ctrl-backspace in insertmode to delete previous word
+vim.keymap.set('i', '<C-backspace>', '<C-w>')
+vim.keymap.set('c', '<C-backspace>', '<C-w>')

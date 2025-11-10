@@ -6,6 +6,9 @@ vim.lsp.enable('lua_ls')
 vim.lsp.enable('clangd')
 vim.lsp.enable('jdtls')
 
+--webdev
+vim.lsp.enable('html-lsp')
+vim.lsp.enable('css-lsp')
 
 
 --settings/keybinds for lsp related things
