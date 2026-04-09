@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-require("amongus")
-
+require("settings")
+require("plugins")
+require("lsp")

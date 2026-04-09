@@ -1,65 +1,51 @@
 --colour schemes
--- default can be set with: 
-return{
-    {
-        'morhetz/gruvbox',
-        priority = 1000,
-        lazy = false,
-        -- config = function()
-        --     vim.cmd([[colorscheme gruvbox]])
-        -- end
+
+
+vim.pack.add({
+    'https://github.com/morhetz/gruvbox'
+})
+
+
+vim.pack.add({
+    'https://github.com/Mofiqul/vscode.nvim'
+})
+
+
+require('vscode').setup({
+    transparent = false,
+    italic_comments = true,
+    disable_nvimtree_bg = true,
+    preset = true,
+    mode = dark,
+    color_overrides = {
+        vscLineNumber = '#FFFFFF',
     },
-    {
-        --vscode colour scheme
-        'Mofiqul/vscode.nvim',
-        priority = 100,
-        lazy = false,
-        config= function()
-            -- vim.cmd([[colorscheme vscode]])
-            --vim.cmd([[colorscheme vscode)
-            require('vscode').setup({
-                transparent = false,
-                italic_comments = true,
-                disable_nvimtree_bg = true,
-                preset = true,
-                mode = dark,
-                color_overrides = {
-                    vscLineNumber = '#FFFFFF',
-                },
-            })
-            -- require('vscode').load('dark')
-        end,
-    },
-    {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        opts = {},
-    },
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        lazy = false,
-    },
-    {
-        'sainnhe/everforest',
-        priority = 1000,
-        lazy = false,
-        -- config = function()
-        --     vim.cmd([[colorscheme everforest]])
-        -- end
-    },
-    {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000,
-    },
-    {
-        -- url = {"~/projects/colourscheme_nvim"}
-        "colourscheme_nvim",
-        dev = true,
-        config = function()
-            vim.cmd([[colorscheme colourscheme_nvim]])
-        end
-    }
-}
+})
+
+
+
+vim.pack.add({
+    'https://github.com/folke/tokyonight.nvim'
+})
+
+vim.pack.add({
+    'https://github.com/rose-pine/neovim'
+})
+
+vim.pack.add({
+    'https://github.com/sainnhe/everforest'
+})
+
+
+vim.pack.add({
+    'https://github.com/catppuccin/nvim'
+})
+
+vim.pack.add({
+    'file:///home/max/projects/colourscheme_nvim'
+})
+
+
+
+--set default colourscheme
+vim.cmd([[colorscheme colourscheme_nvim]])
