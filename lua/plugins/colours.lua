@@ -48,4 +48,5 @@ vim.pack.add({
 
 
 --set default colourscheme
-vim.cmd([[colorscheme colourscheme_nvim]])
+-- vim.cmd([[colorscheme colourscheme_nvim]])
+vim.cmd([[colorscheme catppuccin-nvim]])
