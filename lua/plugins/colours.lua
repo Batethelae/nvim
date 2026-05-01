@@ -41,9 +41,9 @@ vim.pack.add({
     'https://github.com/catppuccin/nvim'
 })
 
-vim.pack.add({
-    'file:///home/max/projects/colourscheme_nvim'
-})
+-- vim.pack.add({
+--     'file:///home/max/projects/colourscheme_nvim'
+-- })
 
 
 
